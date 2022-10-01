@@ -1,0 +1,93 @@
+/* Posters */
+
+
+.posters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    }
+
+    /* posters li div */
+    .posters-div {
+    padding: 20px 24px 24px 20px;
+    border-bottom: 1px solid $whiteEEE;
+    border-right: 1px solid $whiteEEE;
+    border-left: 1px solid $whiteEEE;
+    }
+
+    /* posters h2 */
+    .posters-h2 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin:0;
+    margin-bottom: 4px;
+    color: $black;
+    }
+
+    /* posters p */
+    .posters-p {
+    font-size: 16px;
+    line-height: 1.88;
+    color: $grey75;
+    margin:0;
+    }
+
+    /* posters li */
+    .posters-li {
+    width: calc((100% - 60px) / 3);
+    position: relative;
+    }
+
+    /* posters a*/
+    .posters-a {
+    display: block;
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    /* posters a:hover */
+    &:hover,
+    &:focus {
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.3);
+    }
+    /* overlay hover */
+    &:hover .overlay {
+    transform: translateY(0);
+    }}
+
+    /* Text box hover */
+    .box {
+    position: relative;
+    overflow: hidden;
+    }
+
+    /* Overlay */
+    .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(+100%);
+    transition: transform 500ms ease;
+    background-color: rgba(33, 150, 243, 0.9);
+    display: flex;
+    }
+
+    /* Overlay text */
+    .overlay-p {
+    font-size: 18px;
+    line-height: 1.56;
+    color: $white;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 24px;
+    padding-right: 24px;
+    }
+
+  
+
+    /* Posters end */

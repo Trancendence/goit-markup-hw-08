@@ -1,0 +1,265 @@
+/* Header */
+
+
+/* header bg */
+.header { 
+    background-image: linear-gradient(to right, rgba(47,48,58,0.4), rgba(47,48,58,0.4)),url(../images/bg.jpg); 
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 1600px 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    }
+    /*  header h1 */
+    .header__h {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $white;
+    margin-top: 0;
+    margin-bottom: 30px;
+    }
+    /* header button */
+    .header-button-open {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    background: $blue;
+    color: $white;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+    padding: 10px 32px 10px 32px;
+    border-radius: 4px;
+    border: none;
+    transition-property: background;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    /* header button hover */
+    &:hover {
+    background: $button-hover;
+    }}
+    /* is-hidden */
+    .backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    }
+    /* backdrop */
+    .backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    /* Modal */
+    
+    .modal {
+    background: $white;
+    border-radius: 4px;
+    position: absolute;
+    width: 528px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); 
+    padding: 40px;
+    }
+    /* modal p */
+    .modal__p {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 12px;
+    } 
+    /* modal div */
+    .modal-form__div {
+    display: flex;
+    margin-bottom: 10px;
+    }
+    /* modal-label */
+    .modal-form__label {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: $grey75;
+    margin-bottom: 4px;
+    }
+    /* Modal Input  */
+    .modal-form__input {
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 0;
+    width: 100%;
+    padding-left: 42px;
+    transition-property: fill, border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    /* Input focus */
+    &:focus,
+    &:hover {
+    border: 1px solid $blue;
+    outline: none;
+    }
+   /* Modal svg hover */
+   &:focus-within + .modal-form__svg,
+   &:hover + .modal-form__svg {
+   fill: $blue;
+   }}
+
+    /* Input comment */
+    .modal-form__comment {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 12px 16px; 
+    resize: none;
+    width: 100%;
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    /* comment hover/focus */
+    &:focus,
+    &:hover {
+    border: 1px solid $blue;
+    outline: none;
+    }    
+    /* comment placeholder */
+    &::placeholder {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+    }}
+
+    /* Modal svg */
+    .modal-form__svg {
+    position: absolute;
+    margin-top: 14px;
+    margin-left: 14px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+ 
+    /* hat-button-close */
+    .header-button-close {
+    position: absolute;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    top:8px;
+    right:8px;
+    display: block;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 100%;
+    background-color: $white;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    /* hover */
+    &:hover {
+    fill: var(--blue);
+    }}
+
+    /* Submit */
+    .modal-submit {
+    line-height: 1.71;
+    color: $grey75;
+    margin: 0;
+    margin-top: 20px;
+    position: relative;
+    }
+    .modal-form__label {
+    display: block;
+    }
+    /* Submit box */
+    .modal-submit__input {
+    width: 16px;
+    height: 15px;
+    position: absolute;
+    margin-left: 19px;
+    /* Agree svg hover + focus */
+    &:checked ~ .modal-submit__svg {
+    border-color: $blue;
+    background-color: $blue;
+    }}
+
+    /* Agree check */
+    .modal-submit__span {
+    margin-left: 14px;
+    margin-right: 7px;
+    width: 16px;
+    height: 15px;
+    }
+
+    /* Agree svg */
+    .modal-submit__svg {
+    border: 2px solid $black;
+    border-radius: 4px;
+    fill: $white;
+    }
+ 
+    /* Agreement */
+    .modal-submit__license {
+    text-decoration: underline;
+    color: $blue;
+    margin-left: 8px;
+    }
+    
+    /* Modal Button */
+    .modal-submit__submit {
+    width: 200px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+    transform: translateX(50%);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: $white;
+    background: $blue;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition-property: background;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    /* Modal Button hover */
+    &:hover,
+    &:focus {
+    background: $button-hover;
+    }}
+
+    /* Modal end */
+    
+    /* Шапка (hat) end */
+
+
+    @media screen and (max-width: 767px) {
+        .header {
+            background-size: $mobile 400px;
+            padding-top: 118px;
+            padding-bottom: 118px;
+        }
+        .header__h {
+            font-size: 26px;
+        }
+    }

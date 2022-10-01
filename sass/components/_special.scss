@@ -1,0 +1,44 @@
+/* Особливості (special) */
+
+
+/* special */
+.special {
+    display: flex;
+    justify-content:space-between;
+    gap: 30px;
+    }
+    /* special h3 */
+    .special__h3 {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.14;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    }
+    /* special p */
+    .special__p {
+    font-size: 14px;
+    line-height: 1.71;
+    color: $grey80;
+    margin: 0 auto;
+    }
+    /* special li */
+    .special__li {
+    flex-basis: calc((100% - 30px * 3) / 4);
+    }
+    /* special div */
+    .special__div {
+    background-color: $whiteF5;
+    height: 120px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    /* svg */
+    .special__svg {
+    display: block;
+    }
+    /* Особливості (special) end */

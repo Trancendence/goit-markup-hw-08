@@ -1,0 +1,98 @@
+/* Site nav */
+
+
+/* Site nav header */
+.site-nav {
+    background: $white;
+    border-bottom: 1px solid $whiteECE;
+    }
+    
+    /* nav flex */
+    .site-nav__div,
+    .site-nav__ul,
+    .site-nav__nav {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap: 50px;
+    }
+    
+    /* Webstudio logo */
+    .site-nav__logo {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    color: $black;
+    line-height: 1.2;
+    }
+
+
+    /* студія портфоліо контакти text */
+    .site-nav__page {
+    position: relative; 
+    font-weight: 500;
+    color: $black;
+    display: block;
+    padding: 32px 0;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+      /* link hover */
+      &:hover,
+      &:focus {
+      color: $blue;
+      }}
+    /* Current page */
+    .site-nav__current {
+    color: $blue;
+    /* Current page :after */
+    &::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: $blue;
+    border-radius: 2px;
+    }}
+    /* Site nav contacts */
+    .site-nav__contacts {
+    color: $grey80;
+    font-weight: 500;
+    fill: $grey75;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    /* Site nav contacts hover/focus */
+    &:hover,
+    &:focus {
+    fill: $blue;
+    color: $blue;
+    } }
+
+    /* Site nav contacts icon margin */
+    .site-nav__svg {
+    margin-right: 10px;
+    }   
+
+    /* Site nav end */
+    
+
+    /* MOBILE */
+    @media screen and (max-width: $tablet) {
+    .site-nav__ul {
+    visibility: hidden;
+    }
+
+    .mob-menu {
+    visibility: visible;
+    }
+    }
+
+    
+      

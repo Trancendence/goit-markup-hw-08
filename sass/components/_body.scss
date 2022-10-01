@@ -1,0 +1,72 @@
+/* Container */
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: $mobile) {
+       width: $mobile; 
+    }
+    
+    @media screen and (min-width: $tablet) {
+        width: $tablet; 
+     }
+     
+    @media screen and (min-width: $desktop) {
+        width: $desktop; 
+     }
+    }
+    /* Icon */
+    .icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+    }
+    /* Body */
+    body {
+    font-family: 'Roboto', sans-serif;
+    color: $black;
+    font-weight: 400;
+    font-size: 14px;
+    line-height:1.17;
+    letter-spacing: 0.03em;
+    background: $white;
+    }
+    /* Ul reset */
+    ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+    }
+    /* A decoration reset */
+    a {
+    text-decoration: none;
+    }
+    /* IMG */
+    img {
+    display:block;
+    max-width:100%;
+    }
+    /* Section padding */
+    .section {
+    padding-top:94px;
+    padding-bottom:94px;
+    }
+    /* Hide H1 */
+    .visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+    } 
+    

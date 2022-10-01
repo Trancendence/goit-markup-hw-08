@@ -1,0 +1,84 @@
+/* Наша команда (Command) */
+
+
+/* command bg */
+.command {
+background-color: $whiteF5;
+}  
+
+    .command__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    margin-top:0;
+    margin-bottom:50px;
+    }
+
+    /* Box li */
+    $command_li_box: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    .command__li {
+    background-color: $white;
+    box-shadow: $command_li_box;
+    border-radius: 0px 0px 4px 4px;
+    }
+
+    /* ul */
+    .command__ul {
+    display: flex;
+    justify-content:space-between;
+    }
+    /* text div */
+    .command__div {
+    text-align: center;
+    padding-top:30px;
+    padding-bottom:30px;
+    }
+
+    /* member h3 */
+    .command__h3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    color: $black;
+    margin: 0;
+    margin-bottom: 10px;
+    }
+
+    /* member position p */
+    .command__p {
+    font-size: 16px;
+    line-height: 1.18;
+    color: $grey75;
+    margin: 0;
+    margin-bottom: 10px;
+    }
+    
+    /* a */
+    .command__a {
+    width: 44px;
+    height: 44px;
+    border-radius:50%;
+    background-color: $white;
+    fill: $light-grey;
+    transition-property: background-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    /* a hover */
+    &.command__a:hover,
+    &.command__a:focus {
+    background-color: $blue;
+    fill: $white;
+    }}
+
+   /* command-icons__li */
+    .command-icons__li {
+    display: inline-flex;
+    flex-direction: row;
+    margin-right: 10px;
+    /* last of type */
+    &:last-of-type {
+    margin-right: 0px;
+    }}
+
+    /* Наша команда (Command) end */
