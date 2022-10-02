@@ -136,7 +136,7 @@
 
     /* Submit button */
     .subscribe__button {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     background: $blue;
@@ -167,3 +167,41 @@
     
     /* End Footer */
     
+
+     /* Mobile */
+
+     @media screen and (max-width: $tablet) {
+      .footer .container {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .footer__logo {
+        display: flex;
+        justify-content: center;
+      }
+.footer__address {
+  margin-bottom: 60px;
+}
+.footer__address--li {
+display: flex;
+justify-content: center;
+}
+.subscribe {
+  margin-top: 60px;
+}
+.connect__h2 {
+  text-align: center;
+}
+.connect__p {
+  justify-content: center;
+}
+.subscribe__email {
+width: 450px;
+margin-bottom: 20px;
+}
+.subscribe__button {
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+     }

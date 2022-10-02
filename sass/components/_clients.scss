@@ -46,3 +46,21 @@
 
     /* Clients end */
     
+
+      /* mobile */
+      @media screen and (max-width: $mobile) {
+        .clients__ul {
+            flex-wrap: wrap;
+            flex-shrink: 2;
+        }
+        .clients__a {
+            width: 210px;
+        }
+        .clients__li {
+            margin: 0;
+        }
+        .clients__li:nth-child(2n+1) {
+            margin-right:25px;
+            margin-bottom: 30px;
+        }
+      }

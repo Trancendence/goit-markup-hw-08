@@ -42,3 +42,22 @@
     display: block;
     }
     /* Особливості (special) end */
+
+
+
+    @media screen and (max-width: $tablet) {
+    .special {
+    flex-wrap: wrap;
+
+    }
+    .special__div {
+    width: $mobile;
+
+    }
+    .special__h3 {
+    text-align: center;
+    }
+    .special__p {
+    text-align: center;   
+    }
+    }

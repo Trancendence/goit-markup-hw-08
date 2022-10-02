@@ -48,3 +48,11 @@
     }
 
     /* Tasks end */
+
+        /* Mobile */
+    
+    @media screen and (max-width: $desktop) {
+    .tasks {
+        display: none;
+    }
+    }
