@@ -45,7 +45,7 @@
 
 
 
-    @media screen and (max-width: $tablet) {
+    @media screen and (max-width: 767px) {
     .special {
     flex-wrap: wrap;
 
@@ -61,3 +61,19 @@
     text-align: center;   
     }
     }
+    
+    @media screen and (min-width: $tablet) {
+        .special {
+        flex-wrap: wrap;
+        }
+        .special__div {
+        width: 354px;
+    
+        }
+        .special__h3 {
+        text-align: center;
+        }
+        .special__p {
+        text-align: center;   
+        }
+        }

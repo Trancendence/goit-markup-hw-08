@@ -101,7 +101,7 @@
 
     
     /* MOBILE */
-    @media screen and (max-width: $tablet) {
+    @media screen and (max-width: 767px) {
     .site-nav__ul {
     visibility: hidden;
     }
@@ -115,7 +115,10 @@
       .menu-button {
       visibility: hidden;
       }
+      .site-nav__ul--tab {
+        flex-wrap: wrap;
+        gap: 10px;
       }
-  
-    
+      }
       
+  

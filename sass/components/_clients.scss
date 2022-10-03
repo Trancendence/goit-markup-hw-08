@@ -48,19 +48,44 @@
     
 
       /* mobile */
-      @media screen and (max-width: $mobile) {
+      @media screen and (max-width: 767px) {
         .clients__ul {
             flex-wrap: wrap;
-            flex-shrink: 2;
         }
         .clients__a {
             width: 210px;
         }
-        .clients__li {
+        .clients .container {
             margin: 0;
         }
-        .clients__li:nth-child(2n+1) {
-            margin-right:25px;
+        .clients__li {
+            margin: 0;
             margin-bottom: 30px;
-        }
+        &:nth-child(2n+1) {
+            margin-right: 30px;
+        }}
       }
+
+      @media screen and (min-width: 768px) {
+
+        .clients__ul {
+        width: $tablet;
+        flex-wrap: wrap;
+        }
+        .clients .container {
+            margin: 0;
+        }
+    .clients__li {
+        margin: 0;
+        margin-right: 30px;
+        margin-bottom: 30px;
+    &:nth-child(2n+1) {
+        margin: 0;
+        margin-right: 30px;
+    }
+}
+    .clients__a {
+        width: 226px;
+        margin: 0;
+    }
+        }

@@ -264,3 +264,14 @@
             font-size: 26px;
         }
     }
+    @media screen and (min-width: $tablet) {
+        .header {
+            background-size: $tablet 400px;
+            background-size: cover;
+            padding-top: 118px;
+            padding-bottom: 118px;
+        }
+        .header__h {
+            font-size: 26px;
+        }
+    }
