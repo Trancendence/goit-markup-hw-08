@@ -7,10 +7,12 @@
 
     @media screen and (min-width: $mobile) {
        width: $mobile; 
+       overflow:hidden;
     }
     
     @media screen and (min-width: $tablet) {
         width: $tablet; 
+        overflow:hidden;
      }
      
     @media screen and (min-width: $desktop) {

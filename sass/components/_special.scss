@@ -51,7 +51,7 @@
 
     }
     .special__div {
-    width: $mobile;
+    width: 450px;
 
     }
     .special__h3 {
@@ -62,7 +62,7 @@
     }
     }
     
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
         .special {
         flex-wrap: wrap;
         }

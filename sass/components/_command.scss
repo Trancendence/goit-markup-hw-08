@@ -100,7 +100,7 @@ background-color: $whiteF5;
     height: 460px;
     }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1139px) {
     .command__ul {
         flex-wrap: wrap;
         justify-content: center;

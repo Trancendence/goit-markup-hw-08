@@ -66,15 +66,14 @@
         }}
       }
 
-      @media screen and (min-width: 768px) {
+      /* Tablet */
+      @media screen and (min-width: 768px) and (max-width: 1139px) {
 
         .clients__ul {
         width: $tablet;
         flex-wrap: wrap;
         }
-        .clients .container {
-            margin: 0;
-        }
+
     .clients__li {
         margin: 0;
         margin-right: 30px;

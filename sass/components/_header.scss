@@ -264,7 +264,7 @@
             font-size: 26px;
         }
     }
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: $tablet) and (max-width: 1139px) {
         .header {
             background-size: $tablet 400px;
             background-size: cover;

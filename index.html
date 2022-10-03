@@ -18,10 +18,19 @@
     <body>
    <!-- Header -->   
       <header class="site-nav">
-      <!-- Site nav -->
-        <div class="container site-nav__div">
-    <nav class="site-nav__nav">
+        <div class="site-nav__div container">
       <a href="./index.html" class="site-nav__logo"><span class="web">Web</span>Studio</a>
+            <!-- mob-menu -->
+            <button type="button" class="menu-button is-open" aria-expanded="true" aria-label="переключатель моб меню" aria-controls="menu-container" data-menu-button>
+              <svg width="24px" height="16px">
+                <use class="icon-menu" href="./images/icons.svg#mob-menu"></use>
+                <use class="icon-cross" href="./images/icons.svg#cross"></use>
+              </svg>
+            </button>
+            <div class="menu-container is-open" id="menu-container" data-menu>
+              <!-- Site nav -->
+      <div>
+      <nav>
       <ul class="site-nav__ul">
         <li>
           <a href="./index.html" class="site-nav__current site-nav__page">Студія</a>
@@ -34,7 +43,9 @@
         </li>
       </ul>
     </nav>
+  </div>
      <!-- Contacts -->
+     <div>
       <ul class="site-nav__ul site-nav__ul--tab">
         <li>
           <a href="mailto:info@devstudio.com" class="site-nav__contacts">
@@ -49,13 +60,8 @@
           </svg>+38 096 111 11 11</a>
           </li>
       </ul>
-      <!-- mob-menu -->
-      <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
-        <svg width="40px" height="40px">
-          <use class="icon-menu" href="./images/icons.svg#mob-menu"></use>
-          <use class="icon-cross" href="./images/icons.svg#cross"></use>
-        </svg>>
-      </button>
+    </div>
+  </div>
   </div>
       </header>
     <!-- Шапка -->
