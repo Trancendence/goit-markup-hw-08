@@ -29,7 +29,7 @@
       @media screen and (max-width: 767px) {
     display: flex;
     flex-direction: column;
-    padding-bottom: 300px;
+    padding-left: 20px;
       }
     }
 
@@ -41,21 +41,22 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    
-      /* link hover */
-      &:hover,
-      &:focus {
-      color: $blue;
-      }
+    /* link hover */
+    &:hover,
+    &:focus {
+    color: $blue;
+  }
     @media screen and (max-width: 767px) {
     font-size: 40px;
     line-height: 1.17;
     letter-spacing: 0.02em;
     display: block;
     }}
+
     /* Current page */
     .site-nav__current {
     color: $blue;
+
     /* Current page :after */
     &::after {
     content: '';
@@ -66,9 +67,11 @@
     height: 4px;
     background: $blue;
     border-radius: 2px;
+
     @media screen and (max-width: 767px) {
       background: none;
      }}}
+
     /* Site nav contacts */
     .site-nav__contacts {
     color: $grey80;
@@ -83,11 +86,67 @@
     &:focus {
     fill: $blue;
     color: $blue;
-    } }
+    }
+  @media screen and (max-width: 767px) {
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+
+  }}
 
     /* Site nav contacts icon margin */
     .site-nav__svg {
     margin-right: 10px;
-    }   
+    @media screen and (max-width: 767px) {
+      display: none;
+      }}   
+
+.site-nav__number {
+  @media screen and (max-width: 767px) {
+font-size: 34px;
+letter-spacing: 0.02em;
+color: $blue;
+
+  }
+}
+
+/* Site nav ul tab */
+.site-nav__ul--tab {
+  @media screen and (max-width: 767px) {
+flex-direction: column-reverse;
+gap: 32px;
+padding-top: 300px;
+}}
+
+/* Site nav link */
+.site-nav__link {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    gap: 20px;
+    padding-left: 20px;
+    padding-top: 64px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: $blue;
+}}
+
+/* Site nav link a */
+.site-nav__link--a {
+  @media screen and (max-width: 767px) {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: $blue;
+    padding-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+}}
+
+/* linked a */
+#linked-a {
+  border: none;
+}
 
     /* Site nav end */

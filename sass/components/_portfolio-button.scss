@@ -5,7 +5,13 @@
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
-    }  
+
+    @media screen and (max-width: 767px) {
+    flex-wrap: wrap; 
+    margin-bottom: 40px;
+    gap: 8px;
+    row-gap: 15px;
+    }}  
 
     /* button margin */
     .button-li {
@@ -13,8 +19,13 @@
     /* last-of-type */
     &:last-of-type {
     margin-right:0;
-    } }
+    }}
 
+    .section__mob {
+    @media screen and (max-width: 767px) {
+    padding-top: 0; 
+    margin-top: 60px;  
+    }}
     /* button */
     .button-list {
     cursor: pointer;
