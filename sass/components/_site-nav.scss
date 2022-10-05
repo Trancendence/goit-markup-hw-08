@@ -14,7 +14,12 @@
       justify-content: space-between;
       align-items:center;
       height: 60px;
+      @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        justify-content: left;
+        align-items: baseline;
+      }
     }
+  
 
     /* Webstudio logo */
     .site-nav__logo {
@@ -23,15 +28,29 @@
     font-size: 26px;
     color: $black;
     line-height: 1.2;
-    }
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+     top: 50%;
+     transform: translateY(25%);
+    }}
 
-    .site-nav__ul {
+    .site-nav__ul--nav {
       @media screen and (max-width: 767px) {
     display: flex;
     flex-direction: column;
     padding-left: 20px;
-      }
     }
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    display: flex;
+    gap: 50px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    margin-left: 80px;
+    top: 50%;
+    transform: translateY(50%);
+    }
+  }
 
     /* студія портфоліо контакти text */
     .site-nav__page {
@@ -51,6 +70,9 @@
     line-height: 1.17;
     letter-spacing: 0.02em;
     display: block;
+    }
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+      padding: 0;
     }}
 
     /* Current page */
@@ -70,6 +92,13 @@
 
     @media screen and (max-width: 767px) {
       background: none;
+     }
+     @media screen and (min-width: $tablet) and (max-width: 1199px) {
+      background: none;
+
+      // width: 75px;
+      // left: 95px;
+      // bottom: -25px;
      }}}
 
     /* Site nav contacts */
@@ -91,7 +120,6 @@
   font-size: 24px;
   line-height: 1.16;
   letter-spacing: 0.02em;
-
   }}
 
     /* Site nav contacts icon margin */
@@ -99,16 +127,21 @@
     margin-right: 10px;
     @media screen and (max-width: 767px) {
       display: none;
-      }}   
+      }
+    @media screen and (min-width: 767px) and (max-width: 1199px) {
+      display: block;
+    }
+    }   
 
 .site-nav__number {
   @media screen and (max-width: 767px) {
 font-size: 34px;
 letter-spacing: 0.02em;
 color: $blue;
-
-  }
 }
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+ padding-top: 10px;
+}}
 
 /* Site nav ul tab */
 .site-nav__ul--tab {
@@ -116,6 +149,14 @@ color: $blue;
 flex-direction: column-reverse;
 gap: 32px;
 padding-top: 300px;
+}
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+display: flex;
+flex-direction: column;
+font-weight: 500;
+font-size: 12px;
+line-height: 1.16;
+letter-spacing: 0.02em;
 }}
 
 /* Site nav link */
@@ -130,6 +171,9 @@ padding-top: 300px;
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: $blue;
+}
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+display: none;
 }}
 
 /* Site nav link a */

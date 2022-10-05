@@ -25,7 +25,12 @@
     @media screen and (max-width: 767px) {
     padding-top: 0; 
     margin-top: 60px;  
-    }}
+    }
+@media screen and (min-width: $tablet) and (max-width: 1199px) {
+    padding-top: 0;
+    margin-top: 60px;
+}}
+
     /* button */
     .button-list {
     cursor: pointer;

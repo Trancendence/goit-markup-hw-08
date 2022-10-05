@@ -41,6 +41,10 @@
     @media screen and (max-width: 767px) {
     width: 100%
     }
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    width: 354px;
+    display: flex;
+    }
 }
 
     /* posters a*/
@@ -57,13 +61,19 @@
     /* overlay hover */
     &:hover .overlay {
     transform: translateY(0);
+    }
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
     }}
 
     /* Text box hover */
     .box {
     position: relative;
     overflow: hidden;
-    }
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    flex-grow: 1;
+    }}
 
     /* Overlay */
     .overlay {

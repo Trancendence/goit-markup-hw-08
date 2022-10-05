@@ -42,9 +42,9 @@
         display: block;
     }
 }
-     @media screen and (min-width: $tablet) {
-        display:flex;
-        flex-grow: 1;
-        justify-content: space-between;
-  }
+     @media screen and (min-width: $tablet) and (max-width: 1199px) {
+      display: flex;
+      gap: 95px;
+      padding: 0;
+    }
   }
