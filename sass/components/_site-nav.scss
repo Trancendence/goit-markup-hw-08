@@ -18,8 +18,10 @@
         justify-content: left;
         align-items: baseline;
       }
-    }
-  
+      @media screen and (min-width: $desktop) {
+        align-items: baseline;
+        justify-content: flex-start;
+    }}
 
     /* Webstudio logo */
     .site-nav__logo {
@@ -28,17 +30,26 @@
     font-size: 26px;
     color: $black;
     line-height: 1.2;
+        /* Webstudio logo Tab */
     @media screen and (min-width: $tablet) and (max-width: 1199px) {
      top: 50%;
      transform: translateY(25%);
-    }}
+    }
+ /* Webstudio logo Desk */
+    @media screen and (min-width: $desktop) {
+      top: 50%;
+      transform: translateY(50%);
+      margin-left: 115px;
+  }}
 
+ /* site-nav__ul--nav */
     .site-nav__ul--nav {
       @media screen and (max-width: 767px) {
     display: flex;
     flex-direction: column;
     padding-left: 20px;
     }
+    /* site-nav__ul--nav Tab */
     @media screen and (min-width: $tablet) and (max-width: 1199px) {
     display: flex;
     gap: 50px;
@@ -50,7 +61,16 @@
     top: 50%;
     transform: translateY(50%);
     }
-  }
+/* site-nav__ul--nav Desk */
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      gap: 50px;
+      margin-left: 93px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+  }}
 
     /* студія портфоліо контакти text */
     .site-nav__page {
@@ -73,7 +93,14 @@
     }
     @media screen and (min-width: $tablet) and (max-width: 1199px) {
       padding: 0;
-    }}
+    }
+    @media screen and (min-width: $desktop) {
+      top: 50%;
+      transform: translateY(50%);
+      padding: 0;
+      display: flex;
+  }
+}
 
     /* Current page */
     .site-nav__current {
@@ -95,11 +122,14 @@
      }
      @media screen and (min-width: $tablet) and (max-width: 1199px) {
       background: none;
-
+      // background: none;
       // width: 75px;
       // left: 95px;
       // bottom: -25px;
-     }}}
+     }
+     @media screen and (min-width: $desktop) {
+      bottom: -20px;
+    }}}
 
     /* Site nav contacts */
     .site-nav__contacts {
@@ -145,7 +175,8 @@ color: $blue;
 
 /* Site nav ul tab */
 .site-nav__ul--tab {
-  @media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
+display: flex;
 flex-direction: column-reverse;
 gap: 32px;
 padding-top: 300px;
@@ -157,6 +188,16 @@ font-weight: 500;
 font-size: 12px;
 line-height: 1.16;
 letter-spacing: 0.02em;
+}
+@media screen and (min-width: $desktop) {
+  display: flex;
+  gap: 30px;
+  padding-top: 15px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  margin-left: 100px;
 }}
 
 /* Site nav link */
@@ -174,6 +215,9 @@ letter-spacing: 0.02em;
 }
 @media screen and (min-width: 767px) and (max-width: 1199px) {
 display: none;
+}
+@media screen and (min-width: $desktop) {
+  display: none;
 }}
 
 /* Site nav link a */

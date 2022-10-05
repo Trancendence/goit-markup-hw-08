@@ -17,7 +17,13 @@
     color: $white;
     margin:0;
     margin-bottom: 20px;
+
+    @media screen and (max-width: 767px) {
+    text-align: center;
     }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    text-align: center;
+    }}
 
     /* a */
     .connect__a {
@@ -34,7 +40,12 @@
     &:focus {
     background-color: $blue;
     }}
-     
+
+    .connect__div {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 165px;
+    }}
+
     /* connect-icons */
      .connect-icons, 
      .connect-icons__li {
@@ -49,7 +60,15 @@
     /* Footer flex */
     .footer .container {
     display: flex;
+
+    @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    justify-content: center;
     }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    }}
 
       /* Footer logo */
     .footer__logo {
@@ -58,7 +77,15 @@
     font-size: 26px;
     color: $white;
     line-height: 1.2;
+
+    @media screen and (max-width: 767px) {
+    display: flex;
+    justify-content: center;
     }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    justify-content: center;
+    }}
 
     /* Address margin */
     .footer__address {
@@ -67,6 +94,22 @@
     /* address list margin */
     &--li:not(:last-child)  {
     margin-bottom: 9px;
+    }
+    @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 60px;
+    }}
+
+    .footer__address--li {
+    @media screen and (max-width: 767px) {
+    display: flex;
+    justify-content: center;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    justify-content: center;
     }}
 
   /* Address  */
@@ -105,7 +148,18 @@
     .subscribe {
     margin: 0;
     margin-left: auto;  
+    @media screen and (max-width: 767px) {
+    margin-top: 60px;
     }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 60%;
+    transform: translateX(-50%);
+    }
+    @media screen and (min-width: $desktop) {
+    margin: 0;
+    margin-left: 93px;
+    }}
+
     /* Subscribe p */
     .connect__p {
     font-weight: 700;
@@ -116,7 +170,14 @@
     margin:0;
     margin-bottom: 20px;
     display: flex;
+
+    @media screen and (max-width: 767px) {
+    justify-content: center;
     }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    justify-content: center;
+    }}
+
 
     /* Email */
     .subscribe__email {
@@ -132,8 +193,20 @@
     padding: 0;
     padding-left: 15px;
     margin-right: 12px;
+    @media screen and (max-width: 767px) {
+    width: 450px;
+    margin-bottom: 20px;
     }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 450px;
+    margin-bottom: 20px;
+    }}
 
+    .subscribe__form {
+    @media screen and (min-width: $desktop) {
+      display: flex;
+    }}
+    
     /* Submit button */
     .subscribe__button {
     display: flex;
@@ -158,6 +231,14 @@
     &.subscribe__button:hover,
     &.subscribe__button:focus {
     background: $button-hover;
+    }
+    @media screen and (max-width: 767px) {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 50%;
+    transform: translateX(-50%);
     }}
 
     /* svg */
@@ -167,82 +248,3 @@
     
     /* End Footer */
     
-
-     /* Mobile */
-
-@media screen and (max-width: 767px) {
-.footer .container {
-flex-wrap: wrap;
-justify-content: center;
-}
-.footer__logo {
-display: flex;
-justify-content: center;
-}
-.footer__address {
-margin-bottom: 60px;
-}
-.footer__address--li {
-display: flex;
-justify-content: center;
-}
-.subscribe {
-margin-top: 60px;
-}
-.connect__h2 {
-text-align: center;
-}
-.connect__p {
-justify-content: center;
-}
-.subscribe__email {
-width: 450px;
-margin-bottom: 20px;
-}
-.subscribe__button {
-margin-left: 50%;
-transform: translateX(-50%);
-}
-
-     }
-
-     /* Tablet */
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-.footer .container {
-flex-wrap: wrap;
-justify-content: center;
-}
-.footer__logo {
-display: flex;
-justify-content: center;
-}
-.footer__address {
-margin-bottom: 60px;
-}
-.footer__address--li {
-display: flex;
-justify-content: center;
-}
-.subscribe {
-  margin-left: 60%;
-  transform: translateX(-50%);
-}
-.connect__div {
-  margin-left: 165px;
-}
-.connect__h2 {
-  text-align: center;
-}
-.connect__p {
-  justify-content: center;
-}
-.subscribe__email {
-width: 450px;
-margin-bottom: 20px;
-}
-.subscribe__button {
-  margin-left: 50%;
-  transform: translateX(-50%);
-}
-}

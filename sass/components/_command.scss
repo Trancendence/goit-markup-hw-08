@@ -4,7 +4,7 @@
 /* command bg */
 .command {
 background-color: $whiteF5;
-}  
+}
 
     .command__title {
     font-weight: 700;
@@ -21,19 +21,43 @@ background-color: $whiteF5;
     background-color: $white;
     box-shadow: $command_li_box;
     border-radius: 0px 0px 4px 4px;
+
+    @media screen and (max-width: 767px) {
+    margin: 0;
+    margin-bottom: 30px;
     }
+
+    @media screen and (min-width: 768px) and (max-width: 1139px) {
+    margin: 0;
+    margin-bottom: 30px;
+    &:nth-child(2n+1) {
+    margin-right: 30px;
+    }}
+    @media screen and (min-width: $desktop) {
+    width: 270px;
+    }}
 
     /* ul */
     .command__ul {
     display: flex;
     justify-content:space-between;
+
+    @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    justify-content: center;
     }
+    @media screen and (min-width: 768px) and (max-width: 1139px) {
+    flex-wrap: wrap;
+}}
+    
     /* text div */
     .command__div {
     text-align: center;
     padding-top:30px;
     padding-bottom:30px;
-    }
+    @media screen and (min-width: 768px) and (max-width: 1139px) {
+    width: 354px;
+    }}
 
     /* member h3 */
     .command__h3 {
@@ -82,28 +106,3 @@ background-color: $whiteF5;
     }}
 
     /* Наша команда (Command) end */
-
-
-    /* Mobile */
-@media screen and (max-width: 767px) {
-    .command__ul {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .command__li {
-    margin: 0;
-    margin-bottom: 30px;
-    }
-}
-@media screen and (min-width: 768px) and (max-width: 1139px) {
-    .command__ul {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .command__li {
-        margin: 0;
-        margin-bottom: 30px;
-    &:nth-child(2n+1) {
-        margin-right: 30px;
-    }}
-}
