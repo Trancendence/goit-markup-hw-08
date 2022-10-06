@@ -16,6 +16,12 @@
         display: none;
     }
   }
+  
+  .menu-button .icon-menu,
+  .menu-button .icon-cross {
+    fill: $black;
+  }
+
   .menu-button .icon-cross {
     display: none;
   }
@@ -40,6 +46,7 @@
         height: 100vh;
         &.is-open {
         display: block;
+        z-index: 999;
     }
 }
      @media screen and (min-width: $tablet) and (max-width: 1199px) {

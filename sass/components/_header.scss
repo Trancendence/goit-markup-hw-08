@@ -194,9 +194,16 @@ screen and (min-resolution: 2dppx) {
     margin-top: 20px;
     position: relative;
     }
-    .modal-form__label {
+
+    .modal-submit__label {
     display: block;
-    }
+    @media screen and (max-width: 767px) {  
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    }}
+
     /* Submit box */
     .modal-submit__input {
     width: 16px;
@@ -228,8 +235,10 @@ screen and (min-resolution: 2dppx) {
     .modal-submit__license {
     text-decoration: underline;
     color: $blue;
-    margin-left: 8px;
-    }
+    margin-left: 5px;
+    @media screen and (max-width: 767px) {  
+    margin-left: 0;
+    }}
     
     /* Modal Button */
     .modal-submit__submit {
