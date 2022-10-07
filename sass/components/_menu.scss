@@ -7,6 +7,7 @@
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 200;
     &:hover,
     &:focus {
       fill: $blue;
@@ -15,11 +16,6 @@
     @media screen and (min-width: $tablet) {
         display: none;
     }
-  }
-  
-  .menu-button .icon-menu,
-  .menu-button .icon-cross {
-    fill: $black;
   }
 
   .menu-button .icon-cross {
@@ -34,19 +30,20 @@
 
   .menu-container {
     background-color: $white;
-    padding: 20px;
+    padding-left: 40px;
      font-size: 20px;
 
      @media screen and (max-width: 767px) {
         display: none;
         position: absolute;
-        top: 100%;
         left: 0;
         width: 100%;
         height: 100vh;
         &.is-open {
         display: block;
-        z-index: 999;
+        z-index: 100;
+        top: 0;
+        padding-top: 50px;
     }
 }
      @media screen and (min-width: $tablet) and (max-width: 1199px) {

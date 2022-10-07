@@ -54,12 +54,18 @@
     display:block;
     max-width:100%;
     height:auto;
-    }
+    @media screen and (min-width: $desktop) {
+    width: 100%;
+    }}
     /* Section padding */
     .section {
     padding-top:94px;
     padding-bottom:94px;
+    @media screen and (max-width: 767px) {
+    padding-top:60px;
+    padding-bottom:60px;  
     }
+}
     /* Hide H1 */
     .visually-hidden {
     position: absolute;

@@ -193,6 +193,8 @@ screen and (min-resolution: 2dppx) {
     margin: 0;
     margin-top: 20px;
     position: relative;
+    display: flex;
+    justify-content: center;
     }
 
     .modal-submit__label {
@@ -209,7 +211,7 @@ screen and (min-resolution: 2dppx) {
     width: 16px;
     height: 15px;
     position: absolute;
-    margin-left: 19px;
+
     /* Agree svg hover + focus */
     &:checked ~ .modal-submit__svg {
     border-color: $blue;
@@ -218,8 +220,6 @@ screen and (min-resolution: 2dppx) {
 
     /* Agree check */
     .modal-submit__span {
-    margin-left: 14px;
-    margin-right: 7px;
     width: 16px;
     height: 15px;
     }
@@ -244,10 +244,8 @@ screen and (min-resolution: 2dppx) {
     .modal-submit__submit {
     width: 200px;
     height: 50px;
-    margin: 0;
-    padding: 0;
-    margin-top: 30px;
-    transform: translateX(50%);
+    display: block;
+    margin: 30px auto 0;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
